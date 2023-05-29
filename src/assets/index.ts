@@ -11,6 +11,19 @@ import github from "./github.png"
 import linkedin from "./linkedin.png"
 import instagram from "./instagram.png"
 
+import html from "../assets/technologies/html.png"
+import css from "../assets/technologies/css.png"
+import javascript from "../assets/technologies/javascript.png"
+import typescript from "../assets/technologies/typescript-logo.png"
+import react from "../assets/technologies/react-logo.png"
+import next from "../assets/technologies/nextjs.png"
+import redux from "../assets/technologies/redux.png"
+import styledComponents from "../assets/technologies/styled-components.png"
+import sass from "../assets/technologies/sass.png"
+import tailwind from "../assets/technologies/tailwindcs.png"
+import git from "../assets/technologies/git.png"
+
+
 export {
   Lord,
   Lord2,
@@ -22,5 +35,16 @@ export {
   Lord8,
   github,
   linkedin,
-  instagram
+  instagram,
+  html,
+  css,
+  javascript,
+  typescript,
+  redux,
+  react,
+  next,
+  sass,
+  styledComponents,
+  tailwind,
+  git
 }

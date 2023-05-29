@@ -14,6 +14,9 @@ export default {
       },
       backgroundImage:{
         'hero-background': "url('/src/assets/background.png')"
+      },
+      rotate:{
+        "360": "360deg"
       }
     },
   },

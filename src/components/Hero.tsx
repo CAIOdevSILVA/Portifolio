@@ -2,14 +2,14 @@ import { github, linkedin, instagram } from "../assets/index"
 
 const Hero = () => {
   return (
-    <div
+    <section
       className={`relative z-0 bg-[#18181b]`}
     >
       <div
-        className="bg-hero-background bg-cover bg-no-repeat bg-center py-8 px-[6.25rem]"
+        className="bg-hero-background bg-cover bg-no-repeat bg-center py-12 px-[6.25rem] "
       >
-        <div className="flex flex-col gap-4">
-          <h1 className="text-[#f1f5f4] text-6xl font-bold">
+        <div className="flex flex-col gap-4 mt-8 mb-16">
+          <h1 className="text-[#f1f5f4] text-7xl font-bold">
             Olá, eu sou <span className="text-[#e33d33]">Caio</span>
           </h1>
           <h2 className="text-3xl text-[#f1f5f4] font-medium">
@@ -19,7 +19,7 @@ const Hero = () => {
             Desenvolver interfaces de usuário inteligentes e interações úteis,<br/> 
             desenvolver aplicativos da Web avançados e experiências da Web perfeitas.
           </p>
-          <div className="flex gap-4 items-center">
+          <div className="flex gap-4 items-center ">
             <a className="cursor-pointer" href="https://github.com/CAIOdevSILVA" target="_blank">
               <img src={github} alt="Github image"/>
             </a>
@@ -32,7 +32,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
