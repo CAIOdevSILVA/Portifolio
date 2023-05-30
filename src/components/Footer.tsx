@@ -18,21 +18,21 @@ const Footer = () => {
       </div>
       <div className="flex gap-4 items-center ">
         <a
-          className="cursor-pointer"
+          className="cursor-pointer hover:scale-105"
           href="https://github.com/CAIOdevSILVA"
           target="_blank"
         >
           <img src={github} alt="Github image" />
         </a>
         <a
-          className="cursor-pointer"
+          className="cursor-pointer hover:scale-105"
           href="https://www.linkedin.com/in/caio-silva-b12bb61a9/"
           target="_blank"
         >
           <img src={linkedin} alt="linkedin image" />
         </a>
         <a
-          className="cursor-pointer"
+          className="cursor-pointer hover:scale-105"
           href="https://www.instagram.com/dev_caiosilva/"
           target="_blank"
         >

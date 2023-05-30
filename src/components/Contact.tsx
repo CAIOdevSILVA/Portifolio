@@ -15,39 +15,32 @@ const Contact = () => {
 
   return (
     <section className="lg:mt-32 mt-12 mb-8 px-[6.25rem]" id="contact">
-      <div className="flex flex-col px-4 max-w-[50%] shadow-card">
+      <div className="flex  justify-between items-start px-4">
         <div className="mt-8 mb-8 ">
             <Title titleText="Contato" subTitle="entre em contato" />
-
-            <p className="text-[#f1f5f4] text-[18px]">
-
-            </p>
           </div>
-          <form className=" flex flex-col gap-4 py-6">
-            <div className="flex flex-col gap-2 text-[#f1f5f4]">
-              <label>Seu Nome</label>
+          <form className=" flex flex-col gap-8 py-10 min-w-[50%]">
+            <div className="text-[#f1f5f4] ">
               <input 
                 { ...register("name") } 
-                className="outline-none border-none bg-[#e33d33] py-4 px-4 rounded-md"
+                className="outline-none border-b-2 border-[#e33d33] bg-transparent w-full px-2 py-1 placeholder:text-[#f1f5f4]"
                 type="text" 
-                placeholder="Qual o seu nome ?"
+                placeholder="Seu Nome"
               />
             </div>
-            <div className="flex flex-col gap-2 text-[#f1f5f4]">
-              <label>Seu Email</label>
+            <div className="text-[#f1f5f4] ">
               <input 
                 { ...register("email") }
-                className="outline-none border-none bg-[#e33d33] py-4 px-4 rounded-md"
-                placeholder="Qual o seu email ?"
+                className="outline-none border-b-2 border-[#e33d33] bg-transparent w-full px-2 py-1 placeholder:text-[#f1f5f4]"
+                placeholder="Seu Email"
                 type="email" 
               />
             </div>
             <div className="flex flex-col gap-2 text-[#f1f5f4]">
-              <label>Sua Mensagem</label>
               <textarea
                 { ...register("message") }
-                className="outline-none border-none bg-[#e33d33] py-4 px-4 rounded-md h-[15rem]"
-                placeholder="Qual a sua mensagem ?"
+                className="outline-none border border-[#e33d33] bg-[#2d2d2d] py-4 px-4 rounded-md h-[15rem]"
+                placeholder="Sua Mensagem..."
               ></textarea>
             </div>
             <button
