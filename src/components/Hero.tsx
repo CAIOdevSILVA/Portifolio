@@ -3,10 +3,10 @@ import { github, linkedin, instagram } from "../assets/index"
 const Hero = () => {
   return (
     <section
-      className={`relative z-0 bg-[#18181b]`}
+      className={``}
     >
       <div
-        className="bg-hero-background bg-cover bg-no-repeat bg-center py-12 px-[6.25rem] "
+        className="py-12 px-[6.25rem] "
       >
         <div className="flex flex-col gap-4 mt-8 mb-16">
           <h1 className="text-[#f1f5f4] text-7xl font-bold">

@@ -7,6 +7,8 @@ import Lord6 from "./projects/LordOfTheNovels/Lord-img-6.png"
 import Lord7 from "./projects/LordOfTheNovels/Lord-img-7.png"
 import Lord8 from "./projects/LordOfTheNovels/Lord-img-8.png"
 
+import Shareme from "./projects/ShareME/foto-ShareME.png"
+
 import github from "./github.png"
 import linkedin from "./linkedin.png"
 import instagram from "./instagram.png"
@@ -22,6 +24,7 @@ import styledComponents from "../assets/technologies/styled-components.png"
 import sass from "../assets/technologies/sass.png"
 import tailwind from "../assets/technologies/tailwindcs.png"
 import git from "../assets/technologies/git.png"
+import sanity from "../assets/technologies/sanity-logo.png"
 
 
 export {
@@ -46,5 +49,7 @@ export {
   sass,
   styledComponents,
   tailwind,
-  git
+  git,
+  Shareme,
+  sanity
 }

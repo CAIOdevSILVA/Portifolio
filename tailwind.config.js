@@ -17,6 +17,13 @@ export default {
       },
       rotate:{
         "360": "360deg"
+      },
+      flexGrow: {
+        "2": "2",
+        "3": "3",
+      },
+      boxShadow:{
+        "card": "1px 2px 10px 1px rgba(238, 51, 51, 0.5);"
       }
     },
   },

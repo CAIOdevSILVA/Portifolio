@@ -1,11 +1,16 @@
-import { Header, Hero, About } from "./components/index"
+import { Header, Hero, About, Projects, Contact, Footer } from "./components/index"
 
 function App() {
   return (
-    <main className="w-screen h-full bg-zinc-900">
-      <Header />
-      <Hero/>
+    <main className="w-full h-full bg-zinc-900">
+      <div className="h-screen flex flex-col bg-hero-background bg-cover bg-no-repeat bg-center z-20">
+        <Header />
+        <Hero/>
+      </div>
       <About />
+      <Projects />
+      <Contact />
+      <Footer />
     </main>
   )
 }
