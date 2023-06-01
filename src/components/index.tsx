@@ -7,5 +7,6 @@ import Card from "./Card";
 import Button from "./Button";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import Sidebar from "./Sidebar";
 
-export { Header, Hero, About, Title, Projects, Card, Button, Contact, Footer }
+export { Header, Hero, About, Title, Projects, Card, Button, Contact, Footer, Sidebar }

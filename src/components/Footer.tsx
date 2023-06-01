@@ -3,7 +3,7 @@ import { github, linkedin, instagram } from "../assets";
 
 const Footer = () => {
   return (
-    <footer className="mt-16 px-[2rem] lg:px-[6.25rem] py-8 md:flex flex-col justify-between items-center">
+    <footer className="mt-16 px-[2rem] lg:px-[6.25rem] py-8 md:flex max-[44rem]:flex-col justify-between items-center">
       <div className="flex gap-2 items-center mt-2">
         <div className="w-10 h-10 rounded-full">
           <img

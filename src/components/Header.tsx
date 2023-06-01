@@ -1,8 +1,18 @@
+import { useState } from "react"
+import { Sidebar } from "./index"
+import { AiOutlineMenu } from "react-icons/ai"
+
 import logo from "../assets/logo.png"
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false)
+
+  const handleOpeningSideBar = () => {
+    setIsOpen(isOpen === false ? true : false)
+  }
+
   return (
-    <header className="px-[2rem] lg:px-[6.25rem] py-[1.5rem] flex justify-between items-center">
+    <header className="px-[2rem] lg:px-[6.25rem] py-[1.5rem] flex justify-between items-center relative">
       <div className="flex gap-2 items-center">
         <div className="w-10 h-10 rounded-full">
           <img className="w-full h-full object-cover" src={logo} alt="Logo Caio Silva" />
@@ -36,28 +46,22 @@ const Header = () => {
           </a>
         </li>
       </ul>
-      <div className="md:hidden w-64 h-32 bg-zinc-800 rounded-md">
-        <ul className="flex flex-col items-center justify-between py-2 h-full text-[#f1f5f4] font-bold text-lg">
-          <li>
-            <a className="transition duration-300 hover:opacity-60" href="#about">
-              Sobre
-            </a>
-          </li>
-          <li>
-            <a className="transition duration-300 hover:opacity-60" href="#projects">
-              Projetos
-            </a>
-          </li>
-          <li>
-            <a
-              className="transition duration-300 hover:opacity-60"
-              href="#contact"
-            >
-              Contato
-            </a>
-          </li>
-        </ul>
+      {isOpen && (
+        <div className="lg:hidden w-screen h-screen inline-flex bg-sidebar rounded-md absolute inset-0">
+          {isOpen && <Sidebar handleOpeningSideBar={handleOpeningSideBar}/>}
+         </div>
+      )}
+
+      {!isOpen && (
+          <div
+          onClick={handleOpeningSideBar}
+          className="lg:hidden overflow-hidden"
+        >
+          <AiOutlineMenu 
+            className='text-2xl cursor-pointer text-white'
+          />
       </div>
+      )}
     </header>
   )
 }

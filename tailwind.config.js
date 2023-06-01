@@ -24,6 +24,9 @@ export default {
       },
       boxShadow:{
         "card": "1px 2px 10px 1px rgba(238, 51, 51, 0.5);"
+      },
+      backgroundColor:{
+        "sidebar": "rgba(1, 1, 1, 0.8)"
       }
     },
   },
