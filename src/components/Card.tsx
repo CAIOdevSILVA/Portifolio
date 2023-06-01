@@ -20,18 +20,18 @@ interface CardProps {
 
 const Card = ({ project }: CardProps) => {
   return (
-    <div className="w-full min-h-[25rem] inline-flex gap-8 shadow-card mb-8">
-      <div className="flex-grow-1 min-w-[26.3rem]">
+    <div className="w-full lg:min-h-[25rem] inline-flex flex-col lg:inline-flex  gap-8 shadow-card mb-8">
+      <div className="flex-grow-1 min-h-full lg:min-w-[26.3rem]">
         <img className="w-full h-full object-cover object-left" src={project?.projectImg} alt={`${project?.title} imagem`} />
       </div>
-      <div className="flex-grow-2 inline-flex flex-col text-[#f1f5f4] gap-4 py-4 rounded-md">
-        <h1 className="text-[30px] font-medium">{project?.title.toUpperCase()}</h1>
-        <p className="text-[18px] font-light pr-4">
+      <div className="flex-grow-2 inline-flex flex-col text-[#f1f5f4] gap-4 py-4 px-2 rounded-md">
+        <h1 className="text-xl md:text-[30px] font-medium">{project?.title.toUpperCase()}</h1>
+        <p className="text-sm md:text-[18px] font-light pr-4">
           {project.description}
         </p>
         <div className="flex gap-4">
           {project.techs.map((tech) => (
-            <div className="w-2.5rem] h-[2.5rem] cursor-pointer">
+            <div className="w-[1.5rem] h-[1.5rem] sm:w-[2.5rem] sm:h-[2.5rem] cursor-pointer">
               <img className="w-full h-full object-cover" src={tech.logo} alt="tecnology image" />
             </div>
           ))}

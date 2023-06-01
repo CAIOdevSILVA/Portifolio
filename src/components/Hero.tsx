@@ -6,16 +6,16 @@ const Hero = () => {
       className={``}
     >
       <div
-        className="py-12 px-[6.25rem] "
+        className="py-12 px-[2rem] lg:px-[6.25rem] "
       >
         <div className="flex flex-col gap-4 mt-8 mb-16">
-          <h1 className="text-[#f1f5f4] text-7xl font-bold">
+          <h1 className="text-[#f1f5f4] text-5xl md:text-7xl font-bold">
             Olá, eu sou <span className="text-[#e33d33]">Caio</span>
           </h1>
-          <h2 className="text-3xl text-[#f1f5f4] font-medium">
+          <h2 className="text-xl md:text-3xl text-[#f1f5f4] font-medium">
             Front<span className="text-[#e33d33]">-</span>end Developer
           </h2>
-          <p className="text-lg text-[#f1f5f4]">
+          <p className="text-sm md:text-lg text-[#f1f5f4]">
             Desenvolver interfaces de usuário inteligentes e interações úteis,<br/> 
             desenvolver aplicativos da Web avançados e experiências da Web perfeitas.
           </p>

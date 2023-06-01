@@ -3,8 +3,8 @@ import { github, linkedin, instagram } from "../assets";
 
 const Footer = () => {
   return (
-    <footer className="mt-16 px-[6.25rem] py-8 flex justify-between items-center">
-      <div className="flex gap-2 items-center">
+    <footer className="mt-16 px-[2rem] lg:px-[6.25rem] py-8 md:flex flex-col justify-between items-center">
+      <div className="flex gap-2 items-center mt-2">
         <div className="w-10 h-10 rounded-full">
           <img
             className="w-full h-full object-cover"
@@ -12,11 +12,11 @@ const Footer = () => {
             alt="Logo Caio Silva"
           />
         </div>
-        <h2 className="text-xl font-bold text-[#f1f5f4]">
+        <h2 className=" text-lg md:text-xl font-bold text-[#f1f5f4]">
           Caio Silva | Frontend-Developer
         </h2>
       </div>
-      <div className="flex gap-4 items-center ">
+      <div className="flex gap-4 items-center mt-2 ">
         <a
           className="cursor-pointer hover:scale-105"
           href="https://github.com/CAIOdevSILVA"
@@ -39,7 +39,7 @@ const Footer = () => {
           <img src={instagram} alt="instagram image" />
         </a>
       </div>
-      <p className="text-[#f1f5f4] text-lg">
+      <p className="text-[#f1f5f4] text-sm md:text-lg mt-2">
         © 2023 CaioSIlva. Todos os direitos reservados
       </p>
     </footer>
