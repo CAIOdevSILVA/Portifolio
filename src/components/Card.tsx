@@ -20,7 +20,7 @@ interface CardProps {
 
 const Card = ({ project }: CardProps) => {
   return (
-    <div className="w-full lg:min-h-[25rem]  inline-flex max-[700px]:flex-col gap-8 shadow-card mb-8">
+    <div className="w-full lg:min-h-[25rem]  inline-flex max-[44rem]:flex-col gap-8 shadow-card mb-8">
       <div className="flex-grow-1 min-h-full lg:min-w-[26.3rem]">
         <img className="w-full h-full object-cover object-left" src={project?.projectImg} alt={`${project?.title} imagem`} />
       </div>
