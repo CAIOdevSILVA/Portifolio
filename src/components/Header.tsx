@@ -12,7 +12,7 @@ const Header = () => {
   }
 
   return (
-    <header className="px-[2rem] lg:px-[6.25rem] py-[1.5rem] flex justify-between items-center relative">
+    <header className="px-[2rem] lg:px-[6.25rem] py-[1.5rem] flex justify-between items-center">
       <div className="flex gap-2 items-center">
         <div className="w-10 h-10 rounded-full">
           <img className="w-full h-full object-cover" src={logo} alt="Logo Caio Silva" />
@@ -47,7 +47,7 @@ const Header = () => {
         </li>
       </ul>
       {isOpen && (
-        <div className="lg:hidden w-screen h-screen inline-flex bg-sidebar rounded-md absolute inset-0">
+        <div className="lg:hidden w-screen h-screen inline-flex bg-sidebar rounded-md fixed inset-0 z-50">
           {isOpen && <Sidebar handleOpeningSideBar={handleOpeningSideBar}/>}
          </div>
       )}

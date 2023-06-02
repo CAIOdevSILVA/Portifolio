@@ -17,7 +17,7 @@ const About = () => {
       <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
         {technologies.map((technology) => (
           <div key={technology.name} className="flex flex-col items-center gap-4 cursor-pointer">
-            <div className="transition duration-300 transform hover:scale-105 hover:rotate-360">
+            <div className="transition duration-300 z-10 transform hover:scale-105 hover:rotate-360">
               <img className="" src={technology.logo} alt={technology.name} />
             </div>
             <h2 className="text-[#f1f5f4] text-base md:text-lg whitespace-nowrap">{technology.name.toUpperCase()}</h2>
